@@ -7,16 +7,16 @@
                     <div class="card-body">
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="materi" data-bs-toggle="tab" data-bs-target="#materi-pane" type="button" role="tab" aria-controls="materi-pane" aria-selected="true">Materi</button>
+                                <button class="nav-link active" id="materi" data-bs-toggle="tab" data-bs-target="#materi-pane" type="button" role="tab" aria-controls="materi-pane" aria-selected="true"><i class="fa-solid fa-book"></i> Materi</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="petunjuk" data-bs-toggle="tab" data-bs-target="#petunjuk-pane" type="button" role="tab" aria-controls="petunjuk-pane" aria-selected="false">Petunjuk</button>
+                                <button class="nav-link" id="petunjuk" data-bs-toggle="tab" data-bs-target="#petunjuk-pane" type="button" role="tab" aria-controls="petunjuk-pane" aria-selected="false"><i class="fa-solid fa-circle-info"></i> Petunjuk</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="eksperimen" data-bs-toggle="tab" data-bs-target="#eksperimen-pane" type="button" role="tab" aria-controls="eksperimen-pane" aria-selected="false">Eksperimen</button>
+                                <button class="nav-link" id="eksperimen" data-bs-toggle="tab" data-bs-target="#eksperimen-pane" type="button" role="tab" aria-controls="eksperimen-pane" aria-selected="false"><i class="fa-solid fa-flask"></i> Eksperimen</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="analisa" data-bs-toggle="tab" data-bs-target="#analisa-pane" type="button" role="tab" aria-controls="analisa-pane" aria-selected="false">Ruang Analisa</button>
+                                <button class="nav-link" id="analisa" data-bs-toggle="tab" data-bs-target="#analisa-pane" type="button" role="tab" aria-controls="analisa-pane" aria-selected="false"><i class="fa-solid fa-pen"></i> Ruang Analisa</button>
                             </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">

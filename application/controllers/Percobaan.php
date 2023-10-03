@@ -14,4 +14,23 @@ class Percobaan extends CI_Controller
         $this->load->view('Percobaan/Index');
         $this->load->view('Theme/Scripts');
     }
+
+    public function post_analisa()
+    {
+        $post = $this->input->post();
+
+        $data = [
+            'id_percobaan' => $post['id_percobaan'],
+            'nama_analisa' => $post['nama_analisa'],
+            'isi_analisa' => $post['isi_analisa']
+        ];
+
+        $insert = $this->db->insert('tb_analisa', $data);
+
+        if ($insert) {
+            redirect('percobaan/' . $post['id_percobaan']);
+        } else {
+            redirect('percobaan/' . $post['id_percobaan']);
+        }
+    }
 }

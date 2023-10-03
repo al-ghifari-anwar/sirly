@@ -2,7 +2,7 @@
     <div class="container-fluid bg-dark">
         <div class="row py-3">
             <div class="col-12">
-                <h5 class="text-center text-white">Copyright &copy; Faridah Istianah</h5>
+                <h5 class="text-center text-white">Copyright &copy; Farida Istianah</h5>
             </div>
         </div>
     </div>

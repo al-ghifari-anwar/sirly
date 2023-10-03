@@ -155,7 +155,24 @@
                                     document.body.appendChild(script);
                                 </script>
                             </div>
-                            <div class="tab-pane fade" id="analisa-pane" role="tabpanel" aria-labelledby="analisa" tabindex="0">...</div>
+                            <div class="tab-pane fade" id="analisa-pane" role="tabpanel" aria-labelledby="analisa" tabindex="0">
+                                <div class="row p-5">
+                                    <div class="col-12">
+                                        <form action="<?= base_url('post-analisa') ?>" method="POST">
+                                            <div class="form-group">
+                                                <label for="">Nama</label>
+                                                <input type="text" name="nama_analisa" id="" class="form-control">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Analisa Anda</label>
+                                                <textarea name="isi_analisa" id="" cols="30" rows="5" class="form-control"></textarea>
+                                            </div>
+                                            <input type="text" name="id_percobaan" value="<?= $percobaan['id_percobaan'] ?>" hidden>
+                                            <button type="submit" class="btn btn-primary">Simpan</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

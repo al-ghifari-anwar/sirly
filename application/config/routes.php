@@ -58,6 +58,7 @@ $route['judul/(:num)'] = 'Judul/index/$1';
 
 // Percobaan
 $route['percobaan/(:num)'] = 'Percobaan/index/$1';
+$route['post-analisa'] = 'Percobaan/post_analisa';
 
 // About
 $route['about'] = 'Home/about';

@@ -7,10 +7,13 @@
                     <div class="card-body">
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="materi" data-bs-toggle="tab" data-bs-target="#materi-pane" type="button" role="tab" aria-controls="materi-pane" aria-selected="true"><i class="fa-solid fa-book"></i> Materi</button>
+                                <button class="nav-link active" id="petunjukumum" data-bs-toggle="tab" data-bs-target="#petunjukumum-pane" type="button" role="tab" aria-controls="petunjukumum-pane" aria-selected="true"><i class="fa-solid fa-book"></i> Petunjuk Umum</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="petunjuk" data-bs-toggle="tab" data-bs-target="#petunjuk-pane" type="button" role="tab" aria-controls="petunjuk-pane" aria-selected="false"><i class="fa-solid fa-circle-info"></i> Petunjuk</button>
+                                <button class="nav-link" id="materi" data-bs-toggle="tab" data-bs-target="#materi-pane" type="button" role="tab" aria-controls="materi-pane" aria-selected="true"><i class="fa-solid fa-book"></i> Materi</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="petunjuk" data-bs-toggle="tab" data-bs-target="#petunjuk-pane" type="button" role="tab" aria-controls="petunjuk-pane" aria-selected="false"><i class="fa-solid fa-circle-info"></i> Lab Guide</button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="eksperimen" data-bs-toggle="tab" data-bs-target="#eksperimen-pane" type="button" role="tab" aria-controls="eksperimen-pane" aria-selected="false"><i class="fa-solid fa-flask"></i> Eksperimen</button>
@@ -20,8 +23,23 @@
                             </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
-
-                            <div class="tab-pane fade show active" id="materi-pane" role="tabpanel" aria-labelledby="materi" tabindex="0">
+                            <div class="tab-pane fade show active" id="petunjukumum-pane" role="tabpanel" aria-labelledby="petunjukumum" tabindex="0">
+                                <div class="row p-5">
+                                    <div class="col-4">
+                                        <img src="<?= base_url('assets/img/backbtn.png') ?>" alt="" class="img-fluid" width="150">
+                                        <h2 class="text-center">Back</h2>
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="<?= base_url('assets/img/playbtn.png') ?>" alt="" class="img-fluid" width="150">
+                                        <h2 class="text-center">Play</h2>
+                                    </div>
+                                    <div class="col-4">
+                                        <img src="<?= base_url('assets/img/backbtn.png') ?>" alt="" class="img-fluid" width="150">
+                                        <h2 class="text-center">Next</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show" id="materi-pane" role="tabpanel" aria-labelledby="materi" tabindex="0">
                                 <div class="row p-5">
                                     <div class="col-6">
                                         <p><?= $materi['isi_materi'] ?></p>
@@ -34,6 +52,7 @@
                             <div class="tab-pane fade" id="petunjuk-pane" role="tabpanel" aria-labelledby="petunjuk" tabindex="0">
                                 <div class="row p-5">
                                     <div class="col-12">
+
                                         <p><?= $petunjuk['isi_petunjuk'] ?></p>
                                     </div>
                                 </div>
@@ -164,11 +183,15 @@
                                                 <input type="text" name="nama_analisa" id="" class="form-control">
                                             </div>
                                             <div class="form-group">
-                                                <label for="">Analisa Anda</label>
-                                                <textarea name="isi_analisa" id="" cols="30" rows="5" class="form-control"></textarea>
+                                                <label for="">Apa yang terjadi ketika mentega dipanaskan menggunakan api?</label>
+                                                <textarea name="isi_analisa" id="" cols="30" rows="2" class="form-control"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Menurut kalian apa faktor kunci yang menyebabkan suatu benda dapat berubah menjadi cair?</label>
+                                                <textarea name="isi_analisa" id="" cols="30" rows="2" class="form-control"></textarea>
                                             </div>
                                             <input type="text" name="id_percobaan" value="<?= $percobaan['id_percobaan'] ?>" hidden>
-                                            <button type="submit" class="btn btn-primary">Simpan</button>
+                                            <button type="submit" class="btn btn-primary mt-3">Simpan</button>
                                         </form>
                                     </div>
                                 </div>

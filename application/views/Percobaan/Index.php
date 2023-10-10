@@ -34,7 +34,7 @@
                                         <h2 class="text-center">Play</h2>
                                     </div>
                                     <div class="col-4">
-                                        <img src="<?= base_url('assets/img/backbtn.png') ?>" alt="" class="img-fluid" width="150">
+                                        <img src="<?= base_url('assets/img/nextbtn.png') ?>" alt="" class="img-fluid" width="150">
                                         <h2 class="text-center">Next</h2>
                                     </div>
                                 </div>

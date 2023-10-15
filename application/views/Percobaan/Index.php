@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="<?= base_url('assets/game/') . $percobaan['unity_folder'] ?>TemplateData/style.css">
-<section>
+<section style="background-image: url(<?= base_url('assets/img/bg/bg-percobaan.jpg') ?>);">
     <div class="container">
         <div class="row">
             <div class="col-12 p-5">

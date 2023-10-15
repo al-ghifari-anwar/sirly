@@ -32,3 +32,16 @@
         </div>
     </div>
 </section>
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 p-5">
+                <img src="<?= base_url('assets/img/bg/bg-home.jpg') ?>" alt="" class="img-fluid">
+            </div>
+            <div class="col-6 p-5">
+                <h3>Science Virtual Laboratory</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium nobis cumque doloremque voluptates architecto veniam deserunt modi ab rem mollitia. In architecto reiciendis maiores quod labore aliquid culpa ut obcaecati!</p>
+            </div>
+        </div>
+    </div>
+</section>

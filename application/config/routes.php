@@ -62,3 +62,8 @@ $route['post-analisa'] = 'Percobaan/post_analisa';
 
 // About
 $route['about'] = 'Home/about';
+
+// ADMIN
+
+// Auth
+$route['login'] = 'Auth';

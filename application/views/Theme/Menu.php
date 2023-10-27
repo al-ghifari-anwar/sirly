@@ -27,6 +27,9 @@
                             </ul>
                         <?php endforeach; ?>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= base_url('login') ?>"><i class="fas fa-user"></i> Login</a>
+                    </li>
                 </ul>
             </div>
         </div>

@@ -1,4 +1,4 @@
-<section>
+<section style="position: fixed; bottom: 0; width:100%;">
     <div class="container-fluid bg-dark" style="position: relative;">
         <div class="row py-3">
             <div class="col-12">

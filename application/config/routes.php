@@ -67,3 +67,10 @@ $route['about'] = 'Home/about';
 
 // Auth
 $route['login'] = 'Auth';
+
+// Dashboard
+$route['dashboard'] = 'Dashboard';
+
+// Hasil Analisa
+$route['hasil-analisa'] = 'Hasilanalisa';
+$route['jawaban-analisa/(:num)'] = 'Hasilanalisa/jawaban/$1';

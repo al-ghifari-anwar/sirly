@@ -25,7 +25,13 @@ class Auth extends CI_Controller
             $cekUser = $this->db->get_where("tb_user", ['email_user' => $email_user, 'pass_user' => $pass_user])->row_array();
 
             if ($cekUser) {
-                echo "OK";
+                $data = [
+                    'id_user' => $cekUser['id_user'],
+                    'nama_user' => $cekUser['nama_user'],
+                    'email_user' => $cekUser['email_user']
+                ];
+                $this->session->set_userdata($data);
+                redirect('dashboard');
             } else {
                 redirect('login');
             }

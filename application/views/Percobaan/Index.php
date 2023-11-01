@@ -178,18 +178,16 @@
                                 <div class="row p-5">
                                     <div class="col-12">
                                         <form action="<?= base_url('post-analisa') ?>" method="POST">
+                                            <p><?= $analisa['soal_analisa'] ?></p>
                                             <div class="form-group">
                                                 <label for="">Nama</label>
-                                                <input type="text" name="nama_analisa" id="" class="form-control">
+                                                <input type="text" name="nama_jawaban" id="" class="form-control">
                                             </div>
                                             <div class="form-group">
-                                                <label for="">Apa yang terjadi ketika mentega dipanaskan menggunakan api?</label>
-                                                <textarea name="isi_analisa" id="" cols="30" rows="2" class="form-control"></textarea>
+                                                <label for="">Kolom Jawaban</label>
+                                                <textarea name="jawaban" id="" cols="30" rows="5" class="form-control"></textarea>
                                             </div>
-                                            <div class="form-group">
-                                                <label for="">Menurut kalian apa faktor kunci yang menyebabkan suatu benda dapat berubah menjadi cair?</label>
-                                                <textarea name="isi_analisa" id="" cols="30" rows="2" class="form-control"></textarea>
-                                            </div>
+                                            <input type="text" name="id_analisa" value="<?= $analisa['id_analisa'] ?>" hidden>
                                             <input type="text" name="id_percobaan" value="<?= $percobaan['id_percobaan'] ?>" hidden>
                                             <button type="submit" class="btn btn-primary mt-3">Simpan</button>
                                         </form>

@@ -21,6 +21,9 @@
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="analisa" data-bs-toggle="tab" data-bs-target="#analisa-pane" type="button" role="tab" aria-controls="analisa-pane" aria-selected="false"><i class="fa-solid fa-pen"></i> Ruang Analisa</button>
                             </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="jelajah" data-bs-toggle="tab" data-bs-target="#jelajah-pane" type="button" role="tab" aria-controls="jelajah-pane" aria-selected="false"><i class="fa-solid fa-pen"></i> Game Jelajah</button>
+                            </li>
                         </ul>
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="petunjukumum-pane" role="tabpanel" aria-labelledby="petunjukumum" tabindex="0">
@@ -191,6 +194,13 @@
                                             <input type="text" name="id_percobaan" value="<?= $percobaan['id_percobaan'] ?>" hidden>
                                             <button type="submit" class="btn btn-primary mt-3">Simpan</button>
                                         </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="jelajah-pane" role="tabpanel" aria-labelledby="jelajah" tabindex="0">
+                                <div class="row p-5">
+                                    <div class="col-4 mx-auto">
+                                        <a href="<?= $percobaan['jelajah_link'] ?>" class="btn btn-danger" target="__blank">Buka Game Jelajah</a>
                                     </div>
                                 </div>
                             </div>
